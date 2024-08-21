@@ -1,23 +1,23 @@
-import "./App.css";
-import ListaDeProdutos from "./Componentes/ListaDeProdutos";
+import logo from './logo.svg';
+import './App.css';
+import ListaProdutos from './Componentes/ListaProdutos';
 
-const produtos = [
-  {
-    nome: "Fortnite",
-    preco: 10.0,
+const produtos = [{
+  nome:"Fortnite",
+  preco: 10.00,
   },
   {
-    nome: "Minecraft",
-    preco: 20.0,
-  },
+    nome:"Free Fire",
+    preco: 2.00,
+    },
 ];
 
 function App() {
   return (
-    <div>
-      <h1>Lista Produtos</h1>
-      <ListaDeProdutos produtos={produtos} />
-    </div>
+  <div>
+    <h1>Lista Produtos</h1>
+    <ListaProdutos produtos={produtos}/>
+  </div>
   );
 }
 
